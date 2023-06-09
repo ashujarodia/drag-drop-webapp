@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #bcaaaa;
+}
+
+/* Main container */
+.main-container {
+	width: 80%;
+	margin: 40px auto;
+	text-align: center;
+	background-color: #f2ecec;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	background-color: #f9fafb;
+	padding: 20px;
+	border-radius: 8px;
+	border: 2px solid rgb(177, 155, 155);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drag-container {
+	width: 200px;
+	height: 300px;
+	border: 2px solid #ccc;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.drag-item {
+	width: 100%;
+	height: 80px;
+	background-color: #ccc;
+	margin-bottom: 10px;
+	cursor: move;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for specific drag items */
+.drag-item.image {
+	background-image: url("./bgimage.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.drag-item.text {
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #cfe7ff;
+	color: #333;
+}
+
+.drag-item.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.drag-item.icons i {
+	font-size: 36px;
+	color: #ff6b6b;
+}
+
+.success-message {
+	display: none;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #4caf50;
+	color: #ffffff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin: 12px;
+}
+
+.success-message::before {
+	content: "\f058";
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	margin-right: 8px;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.reset-button {
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	background-color: #e53935;
+	color: #ffffff;
+	border: none;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+.reset-button:hover {
+	background-color: #c62828;
+}

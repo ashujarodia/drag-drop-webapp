@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<!-- Heading -->
+			<h1>Example of drag and drop</h1>
+
+			<div class="container">
+				<!-- First container for drag items -->
+				<div
+					class="drag-container"
+					id="first-container"
+				>
+					<!-- Drag item: Image -->
+					<div
+						class="drag-item image"
+						draggable="true"
+					></div>
+
+					<!-- Drag item: Text -->
+					<div
+						class="drag-item text"
+						draggable="true"
+					>
+						You can drag this text to the right container
+					</div>
+
+					<!-- Drag item: Icons -->
+					<div
+						class="drag-item icons"
+						draggable="true"
+					>
+						<i class="fa-solid fa-up-down-left-right"></i>
+					</div>
+				</div>
+
+				<!-- Second container for dropped items -->
+				<div
+					class="drag-container"
+					id="second-container"
+				></div>
+			</div>
+
+			<!-- Success message displayed when item is dropped successfully -->
+			<div
+				class="success-message"
+				id="success-message"
+			>
+				Item dropped successfully!
+			</div>
+
+			<!-- Reset button to clear the containers -->
+			<button
+				class="reset-button"
+				onclick="resetContainers()"
+			>
+				Reset
+			</button>
+		</div>
+
+		<script src="script.js"></script>
+		<script
+			src="https://kit.fontawesome.com/f794d2b8df.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
